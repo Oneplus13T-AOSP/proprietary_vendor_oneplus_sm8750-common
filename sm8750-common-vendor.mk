@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/audio_algos_ver/OPSPT_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/audio_algos_ver/OPSPT_Version.txt \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/audio_algos_ver/OPSR_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/audio_algos_ver/OPSR_Version.txt \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/audio_algos_ver/OPVE_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/audio_algos_ver/OPVE_Version.txt \
-    vendor/oneplus/sm8750-common/proprietary/odm/etc/charge.cfg:$(TARGET_COPY_OUT_ODM)/etc/charge.cfg \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/display/cwb_weightspos.json:$(TARGET_COPY_OUT_ODM)/etc/display/cwb_weightspos.json \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/horae/horae_target.conf:$(TARGET_COPY_OUT_ODM)/etc/horae/horae_target.conf \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
@@ -32,7 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/init.oppo.reserve.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oppo.reserve.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
-    vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V10-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
     vendor/oneplus/sm8750-common/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
@@ -51,7 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/2024-10-11_platform_RSA_SM8750_license_d07bab28-156e-49b6-9eda-103eb7c6f6de.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2024-10-11_platform_RSA_SM8750_license_d07bab28-156e-49b6-9eda-103eb7c6f6de.pfm \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.2_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.2_enpuv5.pmd \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.6_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.6_enpuv5.pmd \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/display/DPU1010.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1010.xml \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/display/DPU10__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU10__.xml \
@@ -706,7 +703,6 @@ PRODUCT_PACKAGES += \
     libaiboost_qnn_external_delegate \
     libqcom_llm \
     libtransformer_lite \
-    libGaiaClient_vnd \
     libQnnCpu \
     libQnnGpu \
     libQnnHtp \
@@ -787,7 +783,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.qti.qccsyshal_aidl-service.xml \
-    manifest_oplus_charger_aidl.xml \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
     manifest_touch_aidl.xml \
@@ -860,11 +855,8 @@ PRODUCT_PACKAGES += \
     horae \
     qccsyshal_aidl-service \
     wfdservice64 \
-    gauged \
     vendor-oplus-hardware-touch-V2-service \
-    vendor.oplus.hardware.charger-V10-service \
     vendor.oplus.hardware.displaypanelfeature-service \
-    wlschgd \
     init.oplus.wifi \
     oplus_sensor_fb \
     touchDaemon

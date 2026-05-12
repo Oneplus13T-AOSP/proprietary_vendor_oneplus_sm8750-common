@@ -12067,37 +12067,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libGaiaClient_vnd",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libGaiaClient_vnd.so",
-            ],
-            shared_libs: [
-                "vendor.oplus.hardware.olc2-V3-ndk",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "libhidltransport",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libQnnCpu",
     owner: "oneplus",
     strip: {
@@ -13407,15 +13376,6 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     system_ext_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest_oplus_charger_aidl.xml",
-    owner: "oneplus",
-    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -15407,35 +15367,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "gauged",
-    owner: "oneplus",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/gauged",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor-oplus-hardware-touch-V2-service",
     owner: "oneplus",
     target: {
@@ -15458,46 +15389,6 @@ cc_prebuilt_binary {
                 "libc++",
                 "libc",
                 "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.oplus.hardware.charger-V10-service",
-    owner: "oneplus",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor.oplus.hardware.charger-V10-service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libhidlbase",
-                "libbinder_ndk",
-                "liblog",
-                "libutils",
-                "libbase",
-                "libbinder",
-                "android.frameworks.sensorservice@1.0",
-                "android.hardware.sensors@1.0",
-                "libsensorndkbridge",
-                "libm",
-                "vendor.oplus.hardware.charger-V10-ndk",
-                "vendor.oplus.hardware.osense.client-V1-ndk",
-                "libosenseaidlhalclient",
-                "libjsoncpp",
-                "libGaiaClient_vnd",
-                "libc++",
-                "libc",
                 "libdl",
             ],
         },
@@ -15537,34 +15428,6 @@ cc_prebuilt_binary {
                 "libjsoncpp",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "wlschgd",
-    owner: "oneplus",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/wlschgd",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc",
-                "libbase",
-                "libc++",
                 "libm",
                 "libdl",
             ],
