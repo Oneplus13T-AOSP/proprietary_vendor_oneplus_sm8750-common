@@ -223,6 +223,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
     android.hardware.bluetooth.audio-impl_prebuilt \
     btaudio_offload_if \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
+    libq3dtools_adreno \
+    libq3dtools_esx \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth.audio_sw \
     android.hardware.bluetooth.lmp_event-impl-qti \
@@ -246,8 +253,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.memory.pasrmanager-impl \
+    vulkan.adreno \
     libAlacSwDec \
     libApeSwDec \
+    libCB \
     libDcfHalFramework \
     libDcfHalLogger \
     libEvrcSwCodec \
@@ -255,12 +264,17 @@ PRODUCT_PACKAGES += \
     libFlacSwDec \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libOpenCL \
+    libOpenCL_adreno \
     libPeripheralStateUtils \
     libQSEEComAPI \
     libQcelp13SwCodec \
     libSensorsInterface \
     libVoiceSdk \
     libadm \
+    libadreno_app_profiles \
+    libadreno_compiler_cl \
+    libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
     libar-pal \
@@ -294,14 +308,22 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libgpt \
+    libgpudataproducer \
+    libgsl \
     libidl \
+    libkcl \
+    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblistensoundmodel2vendor \
     liblistensoundmodelaidl \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
     liblmthermallistner \
     libloadalgo_stub \
+    libmapperutils \
     libmcs \
     libmdmdetect \
     libmdsprpc \
@@ -732,7 +754,10 @@ PRODUCT_PACKAGES += \
     touchDaemon
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so
+    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
+    vendor_lib64_libEGL_adreno_so \
+    vendor_lib64_libGLESv2_adreno_so \
+    vendor_lib64_libq3dtools_adreno_so
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
