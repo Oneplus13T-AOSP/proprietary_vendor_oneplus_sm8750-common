@@ -1,1 +1,1 @@
-OPSPT_Version = OPSPT_V4.2.4rc_AIDL_V
+OPSPT_Version = OPSPT_V4.2.5rc_AIDL_V
