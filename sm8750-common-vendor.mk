@@ -735,7 +735,6 @@ PRODUCT_PACKAGES += \
     libqcodec2_dolbyencoderfilter \
     libtensorflowlite_oplus \
     libtfa98xx \
-    vendor.oplus.hardware.charger-V11-ndk \
     odm_lib_rfsa_adsp_aiboost_signed_libQnnHtpV79Skel_so \
     odm_lib_rfsa_adsp_aiboost_signed_libaiboostubwc_skel_so \
     odm_lib_rfsa_adsp_capi_v3_oprec_so \
