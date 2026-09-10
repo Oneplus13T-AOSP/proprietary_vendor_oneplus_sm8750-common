@@ -984,7 +984,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.syshealthmon-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.syshealthmon-service.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -1036,7 +1035,6 @@ PRODUCT_PACKAGES += \
     deviceInfoServiceModuleNr \
     android.hardware.gnss-aidl-impl-qti \
     libEseUtils \
-    vendor.qti.hardware.soter-impl \
     lib-imscommon \
     lib-imsdcservice \
     lib-imsdpl \
@@ -1214,7 +1212,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim-V1-ndk \
     vendor.qti.hardware.radio.uim_remote_client-V1-ndk \
     vendor.qti.hardware.radio.uim_remote_server-V1-ndk \
-    vendor.qti.hardware.soter-V1-ndk \
     vendor.qti.ims.callcapabilityaidlservice-V1-ndk \
     vendor.qti.ims.configaidlservice-V1-ndk \
     vendor.qti.ims.connectionaidlservice-V1-ndk \
@@ -1272,7 +1269,6 @@ PRODUCT_PACKAGES += \
     uimremoteserver \
     ImsDataChannelService \
     QtiTelephonyService \
-    SoterService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
@@ -1314,7 +1310,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.embmssl.xml \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
-    vendor.qti.hardware.soter-service.xml \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.ims.imscmaidlservice.xml \
     vendor.qti.ims.uceaidlservice.xml \
@@ -1334,7 +1329,6 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub-service.qmi \
     android.hardware.gnss-aidl-service-qti \
     qcrilNrd \
-    vendor.qti.hardware.soter-service \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \
