@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/charge.cfg:$(TARGET_COPY_OUT_ODM)/etc/charge.cfg \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/hw/init.oplus.wifi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.wifi.rc \
-    vendor/oneplus/sm8750-common/proprietary/odm/etc/init/init.audio.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.audio.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/init.oplus.sensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oplus.sensor.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/init.oppo.reserve.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oppo.reserve.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
@@ -112,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.color-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.color-service.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp-service.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf2-hal-service.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
@@ -132,12 +130,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/oplus_Widevine_licenses.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/oplus_Widevine_licenses.pfm \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/perf/targetsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetsysnodesconfigs.xml \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/platform_RSA_SM8750_license_c8338967-b56e-4693-ae1b-7a17ac371ff6.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/platform_RSA_SM8750_license_c8338967-b56e-4693-ae1b-7a17ac371ff6.pfm \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
@@ -236,7 +228,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
+    vendor/oneplus/sm8750-common/proprietary/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/oneplus/sm8750-common/proprietary/vendor/etc/wifi/peach/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/peach/WCNSS_qcom_cfg.ini \
+    vendor/oneplus/sm8750-common/proprietary/vendor/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/dpAP_full.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpAP_full.mbn \
@@ -268,19 +263,29 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen70900_aqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70900_aqe.fw \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen70900_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70900_sqe.fw \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen70900_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70900_zap.mbn \
+    vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen70e00_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70e00_sqe.fw \
+    vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen70e00_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70e00_zap.mbn \
+    vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen71700_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71700_gmu.bin \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen80000_aqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_aqe.fw \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen80000_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_gmu.bin \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen80000_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_sqe.fw \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen80000_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_zap.mbn \
+    vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gen80600_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80600_gmu.bin \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/gmu_gen70900.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70900.bin \
+    vendor/oneplus/sm8750-common/proprietary/vendor/firmware/vpu30_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_2v.mbn \
+    vendor/oneplus/sm8750-common/proprietary/vendor/firmware/vpu30_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_2v_unsigned.mbn \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/vpu35_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu35_4v.mbn \
     vendor/oneplus/sm8750-common/proprietary/vendor/firmware/vpu35_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu35_4v_unsigned.mbn \
     vendor/oneplus/sm8750-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
+    vendor/oneplus/sm8750-common/proprietary/vendor/gpu/kbc/sequence_manifest_a730.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest_a730.bin \
     vendor/oneplus/sm8750-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
+    vendor/oneplus/sm8750-common/proprietary/vendor/gpu/kbc/unified_kbcs_32_a730.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32_a730.bin \
     vendor/oneplus/sm8750-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
-    vendor/oneplus/sm8750-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
+    vendor/oneplus/sm8750-common/proprietary/vendor/gpu/kbc/unified_kbcs_64_a730.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64_a730.bin \
+    vendor/oneplus/sm8750-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
+    vendor/oneplus/sm8750-common/proprietary/vendor/gpu/kbc/unified_ksqs_a730.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs_a730.bin
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
@@ -439,10 +444,7 @@ PRODUCT_PACKAGES += \
     libosensenativeproxy_client_vendor \
     libpdmapper \
     libpdnotifier \
-    libperfconfig \
-    libperfioctl \
     libperipheral_client \
-    libq-perflog \
     libqasr \
     libqc2audio_base \
     libqc2audio_basecodec \
@@ -495,13 +497,6 @@ PRODUCT_PACKAGES += \
     libqsh_ble_pb \
     libqsocket \
     libqspm-mem-utils-vendor \
-    libqti-perfd-client \
-    libqti-perfd \
-    libqti-qesdk-secure \
-    libqti-s3tf \
-    libqti-scenariod \
-    libqti-sslite \
-    libqti-util \
     libqtigefar \
     libqtiidentitycredential \
     libqtikeymaster4 \
@@ -621,7 +616,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.hexlp-V1-ndk \
     vendor.qti.hardware.minkipcbinder-V1-ndk \
-    vendor.qti.hardware.perf2-V1-ndk \
     vendor.qti.hardware.qasr-V2-ndk \
     vendor.qti.hardware.qconfig-V1-ndk \
     vendor.qti.hardware.qseecom-V1-ndk \
@@ -777,7 +771,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.hexlp-service.xml \
     vendor.qti.hardware.minkipcbinder-service.xml \
-    vendor.qti.hardware.perf2.xml \
     vendor.qti.hardware.qconfig-service.xml \
     vendor.qti.hardware.qseecom@1.0-service.xml \
     vendor.qti.hardware.sensorscalibrate.xml \
@@ -809,7 +802,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore-service \
     vendor.qti.hardware.display.color-service \
     vendor.qti.hardware.minkipcbinder@1.0-service \
-    vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.media.c2@1.0-service \
@@ -860,6 +852,7 @@ PRODUCT_PACKAGES += \
     qccsyshal_aidl-service \
     wfdservice64 \
     gauged \
+    ufcsd \
     vendor-oplus-hardware-oplusSensor-V1-service \
     vendor-oplus-hardware-touch-V2-service \
     vendor.oplus.hardware.biometrics.face@1.0-service_uff \
@@ -886,18 +879,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/android.hardware.contexthub-service.qmi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.contexthub-service.qmi.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element-service.qti.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/commcenterd.rc:$(TARGET_COPY_OUT_ODM)/etc/init/commcenterd.rc \
-    vendor/oneplus/sm8750-common/proprietary/odm/etc/init/esim@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/esim@1.0-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/init.network.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.network.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/subsys_daemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/subsys_daemon.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_license.pfm \
+    vendor/oneplus/sm8750-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/oem_asm2_tunner_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_asm2_tunner_platform_license.pfm \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/oem_asm2_tunner_platform_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_asm2_tunner_platform_trail_license.pfm \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/oem_q_tunner_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_q_tunner_platform_license.pfm \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/oem_q_tunner_platform_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_q_tunner_platform_trail_license.pfm \
-    vendor/oneplus/sm8750-common/proprietary/odm/etc/oem_stx_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_stx_platform_license.pfm \
+    vendor/oneplus/sm8750-common/proprietary/odm/etc/oem_qpm8590_qeb_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_qpm8590_qeb_platform_license.pfm \
+    vendor/oneplus/sm8750-common/proprietary/odm/etc/oem_qpm8590_qeb_platform_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_qpm8590_qeb_platform_trail_license.pfm \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/plugin_config.xml:$(TARGET_COPY_OUT_ODM)/etc/plugin_config.xml \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8750-common/proprietary/odm/firmware/secure_ta/alipay.b00:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/alipay.b00 \
@@ -1201,6 +1195,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dpmaidlservice-V1-ndk_vendor \
     vendor.qti.hardware.embmsslaidl-V2-ndk \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
+    vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.atfwd-V1-ndk \
     vendor.qti.hardware.radio.common-V1-ndk \
@@ -1318,7 +1313,6 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub-service.qmi.xml \
     device_manifest_communication_center_aidl.xml \
     device_manifest_subsys.xml \
-    manifest_oplus_esim.xml \
     manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_oplus_ifaa.xml \
     secure_element-service.xml \
@@ -1360,15 +1354,11 @@ PRODUCT_PACKAGES += \
     subsys_daemon \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service \
-    vendor.oplus.hardware.esim@1.0-service \
     init.subsys
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
-    vendor_etc_hal_uuid_map_7_xml \
-    vendor_etc_hal_uuid_map_23_xml \
-    vendor_etc_hal_uuid_map_29_xml \
-    vendor_etc_hal_uuid_map_31_xml
+    vendor_etc_hal_uuid_map_7_xml
 
 endif
