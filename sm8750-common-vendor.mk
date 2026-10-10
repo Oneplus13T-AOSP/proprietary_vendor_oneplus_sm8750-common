@@ -226,7 +226,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
-    vendor/oneplus/sm8750-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini \
     vendor/oneplus/sm8750-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
@@ -333,7 +332,6 @@ PRODUCT_PACKAGES += \
     libGPreqcancel_svc \
     libOpenCL \
     libOpenCL_adreno \
-    libPanelChaplin \
     libPeripheralStateUtils \
     libQSEEComAPI \
     libQcelp13SwCodec \
@@ -699,6 +697,7 @@ PRODUCT_PACKAGES += \
     libqcom_llm \
     libtransformer_lite \
     libGaiaClient_vnd \
+    libPanelChaplin \
     libQnnCpu \
     libQnnGpu \
     libQnnHtp \
@@ -784,6 +783,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_displaypanelfeature_aidl.xml \
     manifest_oplus_face.xml \
     manifest_touch_aidl.xml \
+    vintf_manifext_aidl_panelchaplin.xml \
     KmInstallKeybox \
     adsprpcd \
     cdsprpcd \
