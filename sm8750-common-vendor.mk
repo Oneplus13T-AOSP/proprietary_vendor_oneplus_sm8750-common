@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc \
-    vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V11-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V11-service.rc \
+    vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V12-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V12-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
     vendor/oneplus/sm8750-common/proprietary/odm/init.oplus.face.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.face.rc \
@@ -690,6 +690,7 @@ PRODUCT_PACKAGES += \
     libQnnHtpPrepare.aiframe \
     libQnnHtpV79Stub.aiframe \
     libQnnSystem.aiframe \
+    libaiboost_litert \
     libaiboost_qnn_external_delegate \
     libqcom_llm \
     libtransformer_lite \
@@ -726,6 +727,7 @@ PRODUCT_PACKAGES += \
     libqcodec2_dolbyencoderfilter \
     libtensorflowlite_oplus \
     libtfa98xx \
+    vendor.oplus.hardware.charger-V12-ndk_stock \
     odm_lib_rfsa_adsp_aiboost_signed_libQnnHtpV79Skel_so \
     odm_lib_rfsa_adsp_aiboost_signed_libaiboostubwc_skel_so \
     odm_lib_rfsa_adsp_capi_v3_oprec_so \
@@ -853,7 +855,7 @@ PRODUCT_PACKAGES += \
     vendor-oplus-hardware-oplusSensor-V1-service \
     vendor-oplus-hardware-touch-V2-service \
     vendor.oplus.hardware.biometrics.face@1.0-service_uff \
-    vendor.oplus.hardware.charger-V11-service \
+    vendor.oplus.hardware.charger-V12-service \
     vendor.oplus.hardware.displaypanelfeature-service \
     wlschgd \
     init.oplus.wifi \
@@ -1225,7 +1227,6 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
-    libimscamera_jni \
     libimsmedia_jni \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.ImsRtpService-V2-ndk \
@@ -1243,19 +1244,20 @@ PRODUCT_PACKAGES += \
     libdmtpclient \
     libifaa_factory \
     libimsortcapis \
+    libipc-framework \
+    libipcapis \
     libmindroid-app \
     libmindroid-framework \
     libortc_so \
     libqti-radio-service \
-    libradio-service \
     libradioapis \
     librfapis \
     librpmbengclient \
     libsecurity_event_dcs_vnd \
     libsecurity_event_olc_vnd \
-    libsubsys-service \
     libsubsys-utils \
     libvasapi \
+    vendor.oplus.hardware.subsys_radio-V1-ndk_stock \
     CACertService \
     CneApp \
     IWlanService \
@@ -1356,7 +1358,6 @@ PRODUCT_PACKAGES += \
     init.subsys
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     vendor_etc_hal_uuid_map_7_xml
 
