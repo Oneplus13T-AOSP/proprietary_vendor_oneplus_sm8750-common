@@ -21375,6 +21375,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libSurfaceUtil_jni",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libSurfaceUtil_jni.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libgui",
+                "libnativehelper",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdpmctmgr",
     owner: "oneplus",
     strip: {
@@ -24202,6 +24230,13 @@ sh_binary {
     src: "proprietary/odm/bin/init.subsys.sh",
     filename: "init.subsys.sh",
     device_specific: true,
+}
+
+install_symlink {
+    name: "system_ext_priv-app_ims_lib_arm64_libSurfaceUtil_jni_so",
+    system_ext_specific: true,
+    installed_location: "priv-app/ims/lib/arm64/libSurfaceUtil_jni.so",
+    symlink_target: "/system_ext/lib64/libSurfaceUtil_jni.so",
 }
 
 install_symlink {

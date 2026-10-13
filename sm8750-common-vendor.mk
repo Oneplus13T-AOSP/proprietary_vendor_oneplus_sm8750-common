@@ -1223,6 +1223,7 @@ PRODUCT_PACKAGES += \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
+    libSurfaceUtil_jni \
     libdpmctmgr \
     libdpmfdmgr \
     libdpmframework \
@@ -1358,6 +1359,7 @@ PRODUCT_PACKAGES += \
     init.subsys
 
 PRODUCT_PACKAGES += \
+    system_ext_priv-app_ims_lib_arm64_libSurfaceUtil_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     vendor_etc_hal_uuid_map_7_xml
 
