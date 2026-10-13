@@ -1218,6 +1218,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.uceaidlservice-V1-ndk \
     vendor.qti.latencyaidlservice-V1-ndk \
     vendor.qti.syshealthmon-V1-ndk \
+    libjni_aidl_service \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -1359,6 +1360,8 @@ PRODUCT_PACKAGES += \
     init.subsys
 
 PRODUCT_PACKAGES += \
+    product_app_uimremoteclient_lib_arm64_libjni_aidl_service_so \
+    product_app_uimremoteserver_lib_arm64_libjni_aidl_service_so \
     system_ext_priv-app_ims_lib_arm64_libSurfaceUtil_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     vendor_etc_hal_uuid_map_7_xml

@@ -21214,6 +21214,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libjni_aidl_service",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libjni_aidl_service.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.dpm.api@1.0",
     owner: "oneplus",
     strip: {
@@ -24230,6 +24256,20 @@ sh_binary {
     src: "proprietary/odm/bin/init.subsys.sh",
     filename: "init.subsys.sh",
     device_specific: true,
+}
+
+install_symlink {
+    name: "product_app_uimremoteclient_lib_arm64_libjni_aidl_service_so",
+    product_specific: true,
+    installed_location: "app/uimremoteclient/lib/arm64/libjni_aidl_service.so",
+    symlink_target: "/product/lib64/libjni_aidl_service.so",
+}
+
+install_symlink {
+    name: "product_app_uimremoteserver_lib_arm64_libjni_aidl_service_so",
+    product_specific: true,
+    installed_location: "app/uimremoteserver/lib/arm64/libjni_aidl_service.so",
+    symlink_target: "/product/lib64/libjni_aidl_service.so",
 }
 
 install_symlink {
