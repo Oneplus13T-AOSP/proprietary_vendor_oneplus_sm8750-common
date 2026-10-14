@@ -34,6 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V12-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V12-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
+    vendor/oneplus/sm8750-common/proprietary/odm/etc/permissions/fake_camera_extensions.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/fake_camera_extensions.xml \
     vendor/oneplus/sm8750-common/proprietary/odm/init.oplus.face.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.face.rc \
     vendor/oneplus/sm8750-common/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/oneplus/sm8750-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
@@ -749,6 +750,7 @@ PRODUCT_PACKAGES += \
     WfdService \
     WfdCommon \
     com.android.hotwordenrollment.common.util \
+    androidx.camera.extensions.impl.fake \
     android.hardware.drm-service.xml \
     android.hardware.security.keymint-service-qti.xml \
     bluetooth-finder.xml \

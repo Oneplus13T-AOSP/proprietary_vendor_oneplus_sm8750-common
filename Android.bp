@@ -12740,6 +12740,15 @@ dex_import {
     product_specific: true,
 }
 
+dex_import {
+    name: "androidx.camera.extensions.impl.fake",
+    owner: "oneplus",
+    jars: [
+        "proprietary/odm/framework/androidx.camera.extensions.impl.fake.jar",
+    ],
+    device_specific: true,
+}
+
 prebuilt_etc_xml {
     name: "android.hardware.drm-service.xml",
     owner: "oneplus",
